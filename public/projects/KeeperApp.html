@@ -74,8 +74,28 @@
           />
         </div>
         <div class="col-md-6 mb-5">
-          <p class="lead">A simplified clone of Google Keep, developed using React, supporting basic text input for note-taking. The application allows users to add and delete notes dynamically. Material UI (MUI) was integrated to enhance the user interface with icons and animations. Planned future enhancements include implementing user authentication and integrating a backend database to enable persistent data storage.</p>
+          <p class="lead">This project is a simplified clone of Google Keep, designed as a full-stack web application that enables users to manage personal notes with a streamlined and responsive interface. The front end is built using <b>React</b>, while the backend is powered by <b>Node.js</b> with <b>Express.js</b> web application framework.</p>
+          <p class="lead">The application allows users to sign up for a personal account, supports dynamic note-taking features, allowing users to add and delete text-based notes in real time. User data, including account information and notes, is securely stored in a <b>PostgreSQL</b> database. The interface is styled with <b>Material UI (MUI)</b>, which provides a clean design with smooth animations and intuitive iconography to enhance user experience.</p>
+        </div>
+      </div>
+
+      <div class="row featurette mb-md-5 hidden">
+        <div class="col-md-6 mb-4">
+          <img
+            src="../../image/KeeperAppLogin.gif"
+            class="img-fluid border rounded-3 shadow-lg"
+            alt="Keeper App image"
+            width="1000"
+            height="400"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-md-6 mb-5">
+          <p class="lead">User authentication is handled by <b>Passport.js</b> using the local strategy. Passwords are securely hashed and stored using the <b>bcrypt</b> encryption method, implemented via the popular bcrypt npm library, ensuring strong protection for user credentials.</p>
+          <p class="lead">To maintain login state across sessions, the application stores session data in the database. Upon successful login, a session ID cookie is generated and stored in the user’s browser. When users revisit the application, <b>Passport</b> and <b>Session</b> middleware validate the session ID against the database. Depending on the login state, users are either redirected to their personal notes or prompted to log in.</p>
+          <p class="lead">Planned enhancements include advanced note formatting, tagging, and synchronization across devices.</p>
           <p>GitHub: <a href="https://github.com/MaCanXH/KeeperProject.git">Keeper App</a></p>
+          <p><a href="https://keeperproject-9m43.onrender.com">Click here to try it now!</a></p>
         </div>
       </div>
 

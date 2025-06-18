@@ -56,6 +56,9 @@
     right: 5%;
 }
 
+b {
+  color: #f5ba13;
+}
 @media(prefers-reduced-motion:no-preference) {
     .hidden {
         opacity: 0;
